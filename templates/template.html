@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jogoteca</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="{{url_for('index')}}">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{url_for('novo')}}">Novo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+          <li class="nav-item">
+
+                {%if 'usuario_logado' not in session or session['usuario_logado'] is none %}
+                <a class="nav-link" href="{{url_for('login')}}">Login</a>
+                {%else%}
+                <a class="nav-link" href="{{url_for('logout')}}">Logout</a>
+                {%endif%}
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <div class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul id="messages" class="list-unstyled">
+                {% for category, message in messages %}
+                    <li class="{{category}}">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+      <div class="page-header">
+          <h1>{{ titulo }}</h1>
+      </div>
+
+        {% block conteudo %}{% endblock%}
+
+    </div>
+</body>
+</html>
