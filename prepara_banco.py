@@ -90,4 +90,5 @@ for jogo in cursor.fetchall():
 conn.commit()
 
 cursor.close()
+
 conn.close()

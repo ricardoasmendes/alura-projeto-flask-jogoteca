@@ -110,3 +110,4 @@ def logout():
     session['usuario_logado'] = None
     flash('Logout efetuado com sucesso!',"alert alert-success")
     return redirect(url_for('index'))
+
