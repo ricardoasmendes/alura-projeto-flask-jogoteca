@@ -86,6 +86,9 @@ jogos = [
     ('Valorant', 'FPS', 'PC'),
     ('Crash Bandicoot', 'Hack n Slash', 'PS2'),
     ('Need for Speed', 'Corrida', 'PS2'),
+    ('Celeste', 'Puzzle', 'PC'),
+    ('Minecraft', 'Sandbox', 'PC'),
+    ('Mortal Kombat 2', 'Luta', 'PS2'),
 ]
 cursor.executemany(jogos_sql, jogos)
 

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jogoteca</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+
 </head>
 <body>
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
@@ -59,6 +61,9 @@
 
         {% block conteudo %}{% endblock%}
 
+
+        <script type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
     </div>
 </body>
 </html>
