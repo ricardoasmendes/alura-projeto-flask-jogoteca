@@ -1,2 +1,2 @@
 # alura-projeto-flask-jogoteca
-edit jogo1
+edit jogo12
