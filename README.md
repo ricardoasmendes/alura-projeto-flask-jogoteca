@@ -16,13 +16,45 @@ Este guia detalhado irá te auxiliar a instalar e executar seu projeto com suces
 
 **1. Clone o repositório:**
 
-Abra o prompt de comando (cmd) e navegue até o diretório onde deseja clonar o repositório. Utilize o seguinte comando:
+Abra o prompt de comando Git Bash e navegue até o diretório onde deseja clonar o repositório. Utilize o seguinte comando no Git Bash:
 
 ```bash
 git clone https://github.com/ricardoasmendes/alura-projeto-flask-jogoteca.git
 ```
 
-**2. Instale as dependências:**
+**2- Versão do Python:**
+
+Certifique-se de ter o Python 3.12.4 instalado em seu sistema. Você pode verificar sua versão do Python executando o seguinte comando no prompt de comando:
+
+```bash
+python --version
+```
+
+
+**3- Criar um ambiente virtual:**
+
+Para isolar as dependências do projeto e evitar conflitos com outros sistemas Python, é recomendável criar um ambiente virtual. Siga estas etapas:
+
+1. Abra o prompt de comando e navegue até o diretório raiz do seu projeto.
+2. Execute o seguinte comando para criar o ambiente virtual :
+
+```bash
+python3 -m venv venv
+```
+
+3. Ative o ambiente virtual executando o seguinte comando :
+
+```bash
+venv\Scripts\activate
+```
+
+**4- Ativar o ambiente virtual:**
+
+Sempre que iniciar uma nova sessão no prompt de comando, você precisará ativar o ambiente virtual para que os comandos funcionem corretamente. Utilize o comando de ativação conforme descrito na etapa 3.3.
+
+
+
+**5. Instale as dependências:**
 
 Acesse o diretório do projeto clonado e execute o seguinte comando para instalar as dependências:
 
@@ -30,7 +62,7 @@ Acesse o diretório do projeto clonado e execute o seguinte comando para instala
 pip install -r requirements.txt
 ```
 
-**3. Configure o arquivo .env:**
+**6. Configure o arquivo .env:**
 
 Crie o arquivo `.env` na raiz do diretório do projeto e adicione as seguintes variáveis de ambiente, substituindo os valores de acordo com sua configuração do MySQL:
 
@@ -40,21 +72,15 @@ USER=usuario_mysql
 PASSWORD=senha_mysql
 ```
 
-**4. Crie o banco de dados e tabelas:**
+**7. Crie o banco de dados e tabelas:**
 
-Execute o seguinte comando para executar o script `prepara_banco.py` e criar o banco de dados e as tabelas:
+Execute o seguinte script `prepara_banco.py` para criar a database e as tabelas:
 
-```bash
-python prepara_banco.py
-```
 
-**5. Execute o projeto:**
+**8. Execute o projeto:**
 
-Finalmente, execute o seguinte comando para iniciar o projeto:
+Finalmente, execute o seguinte script `jogoteca.py` para iniciar o projeto:
 
-```bash
-python jogoteca.py
-```
 
 **Observações importantes:**
 
@@ -64,3 +90,8 @@ python jogoteca.py
 
 
 **Com este guia completo, você estará pronto para baixar, instalar e executar seu projeto no Windows com sucesso!**
+
+
+
+
+
