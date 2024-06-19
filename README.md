@@ -82,7 +82,7 @@ Finalmente, execute o seguinte script `jogoteca.py` para iniciar o projeto:
 
 **Observações importantes:**
 
-* Certifique-se de ter o MySQL em execução antes de executar o script `auxiliar.py`.
+* Certifique-se de ter o MySQL em execução antes de executar o script `prepara_banco.py`.
 * Substitua os valores de `HOST`, `USER` e `PASSWORD` no arquivo `.env` com as credenciais de acesso ao seu banco de dados MySQL.
 * Se você encontrar algum erro durante a execução, consulte os logs do projeto ou procure ajuda na comunidade online.
 
