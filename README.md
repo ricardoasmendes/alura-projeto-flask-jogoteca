@@ -22,7 +22,7 @@ Abra o prompt de comando Git Bash e navegue até o diretório onde deseja clonar
 git clone https://github.com/ricardoasmendes/alura-projeto-flask-jogoteca.git
 ```
 
-**2- Versão do Python:**
+**2. Versão do Python:**
 
 Certifique-se de ter o Python 3.12.4 instalado em seu sistema. Você pode verificar sua versão do Python executando o seguinte comando no prompt de comando:
 
@@ -31,7 +31,7 @@ python --version
 ```
 
 
-**3- Criar um ambiente virtual:**
+**3. Criar um ambiente virtual:**
 
 Para isolar as dependências do projeto e evitar conflitos com outros sistemas Python, é recomendável criar um ambiente virtual. Siga estas etapas:
 
@@ -48,7 +48,7 @@ python3 -m venv venv
 venv\Scripts\activate
 ```
 
-**4- Ativar o ambiente virtual:**
+**4. Ativar o ambiente virtual:**
 
 Sempre que iniciar uma nova sessão no prompt de comando, você precisará ativar o ambiente virtual para que os comandos funcionem corretamente. Utilize o comando de ativação conforme descrito na etapa 3.3.
 
