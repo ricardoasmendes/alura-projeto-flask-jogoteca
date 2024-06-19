@@ -37,7 +37,7 @@ Para isolar as dependências do projeto e evitar conflitos com outros sistemas P
 2. Execute o seguinte comando para criar o ambiente virtual :
 
 ```terminal
-python3 -m venv venv
+python -m venv venv
 ```
 
 3. Ative o ambiente virtual executando o seguinte comando :
