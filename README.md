@@ -1,6 +1,6 @@
-## README.md impecável para o seu projeto: Guia completo para download e execução no Windows
+## Guia para download e execução no Windows
 
-**Seja bem-vindo ao guia completo para baixar e executar seu projeto no Windows!**
+**Seja bem-vindo ao guia para baixar e executar seu projeto no Windows!**
 
 Este guia detalhado irá te auxiliar a instalar e executar seu projeto com sucesso, passo a passo.
 
@@ -8,9 +8,7 @@ Este guia detalhado irá te auxiliar a instalar e executar seu projeto com suces
 
 * Git instalado no seu sistema.
 * MySQL instalado e em execução.
-* Arquivo `requirements.txt` com as dependências do projeto.
-* Arquivo `.env` com as configurações de banco de dados.
-* Arquivos `auxiliar.py` e `main.py` do projeto.
+* Python versão 3.12.4
 
 **Passo a passo:**
 
@@ -26,7 +24,7 @@ git clone https://github.com/ricardoasmendes/alura-projeto-flask-jogoteca.git
 
 Certifique-se de ter o Python 3.12.4 instalado em seu sistema. Você pode verificar sua versão do Python executando o seguinte comando no prompt de comando:
 
-```bash
+```terminal
 python --version
 ```
 
@@ -38,13 +36,13 @@ Para isolar as dependências do projeto e evitar conflitos com outros sistemas P
 1. Abra o prompt de comando e navegue até o diretório raiz do seu projeto.
 2. Execute o seguinte comando para criar o ambiente virtual :
 
-```bash
+```terminal
 python3 -m venv venv
 ```
 
 3. Ative o ambiente virtual executando o seguinte comando :
 
-```bash
+```terminal
 venv\Scripts\activate
 ```
 
@@ -58,7 +56,7 @@ Sempre que iniciar uma nova sessão no prompt de comando, você precisará ativa
 
 Acesse o diretório do projeto clonado e execute o seguinte comando para instalar as dependências:
 
-```bash
+```terminal
 pip install -r requirements.txt
 ```
 
