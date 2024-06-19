@@ -1,5 +1,11 @@
 __pycache__/
 .idea/
-.venv/
 .git/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
 
