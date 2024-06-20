@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
   </head>
   <body>
-        {% block navbarconteudo %}
-        {% include 'navbar.html' %}
-        {% endblock %}
+
+    {% include 'navbar.html' %}
+
     <div class="container">
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
