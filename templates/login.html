@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
   </head>
   <body>
+        {% block navbarconteudo %}
+        {% include 'navbar.html' %}
+        {% endblock %}
     <div class="container">
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
@@ -25,6 +28,7 @@
             <p><label>Senha:</label> <input class="form-control" type="password" name="senha" required></p>
             <p><button class="btn btn-primary" type="submit">Entrar</button></p>
         </form>
+        <a class="btn btn-danger" href="{{ url_for('index') }}">Voltar</a>
     </div>
 </body>
 </html>
