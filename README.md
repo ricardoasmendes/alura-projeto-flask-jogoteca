@@ -57,6 +57,7 @@ Sempre que iniciar uma nova sessão no prompt de comando, você precisará ativa
 Acesse o diretório do projeto clonado e execute o seguinte comando para instalar as dependências:
 
 ```terminal
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
