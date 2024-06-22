@@ -3,6 +3,7 @@ from jogoteca import app
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField, validators
 
+
 def recupera_imagem(id):
     for nome_arquivo in os.listdir(app.config['UPLOAD_PATH']):
         if f'capa{id}' == nome_arquivo.split('-')[0]:
