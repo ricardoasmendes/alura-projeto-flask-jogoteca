@@ -16,7 +16,7 @@ def login():
 def autenticar():
     form = FormularioUsuario(request.form)
     usuario = Usuarios.query.filter_by(nickname=form.nickname.data).first()
-    senha = check_password_hash(usuario.senha, form.senha.data)
+    senha = check_password_hash(usuario.senha, form.senha.data) if usuario else None
     if usuario and senha:
         session['usuario_logado'] = usuario.nickname
         flash(usuario.nickname + ' logado com sucesso! ',"alert alert-success")
